@@ -4,7 +4,8 @@ const FormAction = () => {
 
 
     const handleFormAction = (formData) => {
-        console.log(formData);
+        console.log(formData.get('name'));
+        console.log(formData.get('email'));
     }
 
 
@@ -13,9 +14,13 @@ const FormAction = () => {
         <div className="form-container">
             <form action={handleFormAction} className="form">
 
-                <input className="form-control " type="text" placeholder="Name" />
-                <input className="form-control" type="email" placeholder="Email" />
+                <input className="form-control " type="text" name="name" placeholder="Name" />
+                <br />
+                <br />
+                <input className="form-control" type="email" name="email" placeholder="Email" />
+                <br />
 
+                <input type="submit" value="Submit"/>
             </form>
         </div>
     );
