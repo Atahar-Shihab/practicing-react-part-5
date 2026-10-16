@@ -2,6 +2,7 @@ import SimpleForm from './components/SimpleForm/SimpleForm'
 import './App.css'
 import FormAction from './components/FormAction/FormAction'
 import ControlledField from './components/ControlledField/ControlledField'
+import HookForm from "./components/HookForm/HookForm.jsx"
 function App() {
 
 
@@ -18,6 +19,9 @@ function App() {
           <br />
           <br />
           <ControlledField></ControlledField>
+          <br />
+          <br />
+          <HookForm></HookForm>
     </>
   )
 }
